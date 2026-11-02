@@ -72,7 +72,7 @@ response = requests.get(
     params={
         "query": "https://www.walmart.com/ip/Fresh-Rockit-Crisp-Sweet-Miniature-Apples-3lb-Tub/309762096",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -451,7 +451,7 @@ response = requests.get(
     params={
         "query": "https://www.walmart.com/search?q=apples",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -639,7 +639,7 @@ response = requests.get(
     params={
         "query": "apples",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
